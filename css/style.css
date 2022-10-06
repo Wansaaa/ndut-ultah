@@ -1,0 +1,104 @@
+body {
+  background-image: url(../img/more-leaves.png);
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 50px;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 50px;
+  width: 90%;
+}
+
+.container img {
+  width: 50%;
+}
+
+.muncul {
+  opacity: 0;
+  transition: 1s;
+}
+
+.muncul:hover {
+  opacity: 1;
+}
+
+.container h1 {
+  font-family: 'Passions Conflict', cursive;
+  font-size: 70px;
+  color: rgb(5, 207, 8);
+}
+
+.container p {
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+  color: rgb(0, 168, 3);
+}
+
+/* .container p i {
+  color: black;
+} */
+
+.image .balon {
+  position: absolute;
+  width: 100px;
+  top: 230px;
+  right: 15px;
+  animation: animasiGoyang1 3s infinite alternate;
+}
+
+.image .balon1 {
+  position: absolute;
+  width: 100px;
+  top: 230px;
+  left: 15px;
+  animation: animasiGoyang 3s infinite alternate;
+}
+
+/* Dekstop */
+@media (min-width: 992px) {
+  .container {
+    margin: 25px auto;
+    width: 50%;
+  }
+
+  .container h1 {
+    font-size: 120px;
+  }
+
+  .container p {
+    font-size: 20px;
+  }
+
+  .image .balon {
+    width: 200px;
+    right: 40px;
+  }
+
+  .image .balon1 {
+    width: 200px;
+    left: 40px;
+  }
+}
+
+/* Animasi */
+@keyframes animasiGoyang {
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes animasiGoyang1 {
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
